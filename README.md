@@ -3,9 +3,9 @@
 进入项目根目录，执行下面命令将项目文件下载下来
 
 ```
-git clone https://github.com/PencilCl/wangEditor-django.git
+git clone https://github.com/PencilCl/DjangoWangEditor.git
 ```
-或者[下载zip文件](https://github.com/PencilCl/wangEditor-django/archive/master.zip)
+或者[下载zip文件](https://github.com/PencilCl/DjangoWangEditor/archive/master.zip)
 
 再将文件解压到项目根目录
 
@@ -60,3 +60,4 @@ WangEditorField通过下面代码引入
 from DjangoWangEditor.models import WangEditorField
 ```
 
+####编辑器的初始化配置等信息在本项目下的templates/wangeditor.html
