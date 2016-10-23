@@ -1,4 +1,5 @@
 // 不使用设置高度,而是高度自适应 line:2702
+// editorHeight需要每次均更新
 (function (factory) {
     if (typeof window.define === 'function') {
         if (window.define.amd) {
@@ -8264,9 +8265,10 @@ _e(function (E, $) {
             if (menuTop === 0) {
                 menuTop = $menuContainer.offset().top;
                 editorTop = $editorContainer.offset().top;
-                editorHeight = $editorContainer.outerHeight();
                 menuHeight = $menuContainer.outerHeight();
             }
+            /*editorHeight需要每次均更新*/
+            editorHeight = $editorContainer.outerHeight();
 
             if (sTop >= menuTop && sTop + menuFixed + menuHeight + 30 < editorTop + editorHeight) {
                 // 吸顶
