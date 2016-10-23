@@ -14,6 +14,8 @@
   width: 100%;
 
   /*django后台中标签不被遮挡*/
+  /*设置min-height防止height过低时遮挡插入代码的确定按钮*/
+  min-height: 300px;
   overflow: hidden;
 }
 .wangEditor-container a:focus,
